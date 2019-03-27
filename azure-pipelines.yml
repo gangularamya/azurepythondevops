@@ -15,9 +15,9 @@ steps:
 - task: PythonScript@0
   displayName: 'Export project path'
   inputs:
-  - script: python application.py
-  - script: pip install -r requirements.txt
-    displayName: 'Install requirements'
+    - script: python application.py
+    - script: pip install -r requirements.txt
+      displayName: 'Install requirements'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
