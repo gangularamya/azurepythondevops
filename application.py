@@ -12,7 +12,7 @@ class Person(db.Model):
     email = db.Column(db.String, unique=True, nullable=False)
 
 
-db.session.add(Person(id=5,username="Flask", email="example@example.com"))
+db.session.add(Person(id=6,username="Flask", email="example@example.com"))
 db.session.commit()
 
 users = Person.query.all()
